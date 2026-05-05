@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Cormorant Garamond', 'Playfair Display', 'Georgia', serif;
+    background-color: #FAF7F2;
+    color: #2E2A25;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Playfair Display', 'Cormorant Garamond', 'Georgia', serif;
+    font-weight: 600;
+  }
+  .font-body {
+    font-family: 'Montserrat', 'Raleway', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+  }
+  .font-cosmetic {
+    font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+    font-style: italic;
+  }
+}
+
+/* Logo mark styling */
+.logo-im {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+.logo-im-accent {
+  background: linear-gradient(135deg, #2F6B4F 0%, #8AA36B 50%, #B88746 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Elegant glassmorphism & gradients */
+.glass-panel {
+  background: rgba(255, 254, 250, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(217, 128, 38, 0.2);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #2F6B4F 0%, #7D8F54 45%, #B88746 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-bg-gradient {
+  background: linear-gradient(135deg, #E69443 0%, #D98026 50%, #B8620D 100%);
+}
+
+/* Elegant divider */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D98026, transparent);
+}
+
+/* Smooth image hover */
+.img-hover-zoom {
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.img-hover-zoom:hover {
+  transform: scale(1.05);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #D98026;
+  border-radius: 3px;
+}
